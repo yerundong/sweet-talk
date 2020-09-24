@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-	<title>爱荣哟</title>
+	<title>爱情驿站</title>
 	<style type="text/css">
 		@font-face {
 			font-family: digit;
@@ -25,43 +25,37 @@
 		<img id="music-btn" class="music-img" src="./m4.png" alt="">
 		<div id="content">
 			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space" /><span class="comments">*2019—02-01</span><br />
-				<span class="space" /><span id="nowDate" class="comments">*2020-09-23.</span><br />
-				<span class="space" /><span class="comments">*/</span><br />
-				Boy name = <span class="keyword">Mr</span> Ye<br />
-				Girl name = <span class="keyword">Mrs</span> Lin<br />
-				<span class="comments">// Fall in love river. </span><br />
-				The boy love the girl;<br />
-				<span class="comments">// They love each other.</span><br />
-				The girl loved the boy;<br />
-				<span class="comments">// AS time goes on.</span><br />
-				The boy can not be separated the girl;<br />
-				<span class="comments">// At the same time.</span><br />
-				The girl can not be separated the boy;<br />
-				<span class="comments">// Both wind and snow all over the sky.</span><br />
-				<span class="comments">// Whether it's 476 kilometers or 168 kilometers.</span><br />
-				<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
-				<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
-				<span class="placeholder" /><span class="comments">// Whether it is right now</span><br />
-				<span class="placeholder" /><span class="comments">// Still in the distant future.</span><br />
-				<span class="placeholder" />The boy has but one dream;<br />
-				<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+				<p class="title">2019—02-01 —— <span id="nowDate">2020-09-23</span></p>
+				<br>
+				<p>Boy name = <span class="keyword">Mr</span> Ye</p>
+				<p>Girl name = <span class="keyword">Mrs</span> Lin</p>
+				<br>
+				<p class="date">2019—02-01 21:12 <span class="comments">第一次聊天/我对你说：Hi/你回复：hello</span></p>
+				<p class="date">2019—02-10 <span class="comments">大年初六/第一次见面/在宏翔门口/看了《流浪地球》/吃了烤鱼/送你回青山</span></p>
+				<p class="date">2019—03-15 <span class="comments">我回来找你/樱花谷/南峰山/骑电瓶车送你回学校</span></p>
+				<p class="date">2019—04-05 <span class="comments">清明节/你来杭州/“外婆家”吃饭/游逛西湖/买画/手牵手/送你回宾馆/游逛苏堤</span></p>
+				<p class="date">2019—05-01 <span class="comments">我回来找你/五一节/把溪南逛了一大圈/第一次亲亲😚（羞羞）/第一次去我家/沙发上亲亲😚（羞羞）</span></p>
+				<p class="date">2019—07-19 ~ 07-30 <span class="comments">你放暑假/来杭州/吃“羊蝎子”/游逛江滨/灵隐寺/红蓝情侣装/星光拍照/西湖/河坊街/乌镇/吃蟹煲/一起煮菜...</span></p>
+				<p class="date">2019—09-12 <span class="comments">我回来找你/吃烧烤/游九大馆/骑车去野外/一起敷面膜/大京沙滩</span></p>
+				<p class="date">2019—09-30 ~ 10-08 <span class="comments">国庆节/我回来找你/吃牛排自助/一起看阅兵/被迫去了吕峡/坐汽艇去渔排/操场散步健身</span></p>
+				<p class="date">2019—11-30 <span class="comments">我回来找你/吃爱心鸡汤/去一中参加跳舞比赛</span></p>
+				<p class="date">2020—01-14 <span class="comments">你放假了来杭州/把电瓶车胎坐爆了/玩VR游戏/祭灶节/吃蟹煲/星光大道/玩游戏/唱歌/逛宜家/疫情/一起回家过年</span></p>
+				<p class="comments">......</p>
 				<br>
 				<br>
-				I want to say:<br />
-				Baby, I love you forever;<br />
+				<p class="saylove"><i>Baby, I Always love you</i></p>
+				<p class="saylove"><i>Whether it's 476 kilometers or 168 kilometers</i></p>
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						亲爱的，这是我们相爱在一起的时光。
+						亲爱的，我们相爱这么久了
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						爱你直到永永远远。<br />
-						<div class="signature">- 爱你的人</div>
+						臭臭荣，爱你呦~~<br />
+						<div class="signature">- 臭臭东</div>
 					</div>
 				</div>
 			</div>
@@ -83,7 +77,7 @@
 		})
 
 		let endDate = utils.dateTimeFormat(new Date(), undefined, false)
-		$('#nowDate').text('*' + endDate + '.')
+		$('#nowDate').text(endDate)
 
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;

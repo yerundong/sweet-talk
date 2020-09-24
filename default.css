@@ -41,3 +41,22 @@ body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
     transform: scale(1.5, 1.5);
   }
 }
+p{
+  margin: 0;
+  padding: 0;
+}
+#code .title{
+  color:#2b2b2b;
+  font-size: 22px;
+}
+.date{
+  color:#9400D3;
+  line-height: 20px;
+  line-height: 20px;
+  margin-top: 7px;
+}
+.saylove{
+  color:#EEA2AD;
+  font-size: 17px;
+}
+

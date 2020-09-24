@@ -134,5 +134,7 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(3000);
+	setTimeout(() => {
+		$('#loveu').fadeIn(3000);
+	}, 45000);
 }
