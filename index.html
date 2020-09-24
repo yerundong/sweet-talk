@@ -1,10 +1,8 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 	<title>爱荣哟</title>
 	<style type="text/css">
 		@font-face {
@@ -15,8 +13,8 @@
 
 	<link href="default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="jquery.js"></script>
-	<!-- <script type="text/javascript" src="garden.js"></script>
-	<script type="text/javascript" src="functions.js"></script> -->
+	<script type="text/javascript" src="garden.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
 	<script type="text/javascript" src="utils.js"></script>
 
 </head>
@@ -24,7 +22,7 @@
 <body>
 
 	<div id="mainDiv">
-		<img id="music-btn" class="music-img" src="./static/img/m4.png" alt="">
+		<img id="music-btn" class="music-img" src="./m4.png" alt="">
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
@@ -68,12 +66,10 @@
 				</div>
 			</div>
 		</div>
-		<audio src="./static/music.mp3" id="audio" autoplay loop>不支持audio</audio>
+		<audio src="./music.mp3" id="audio" loop>不支持audio</audio>
 	</div>
 
 	<script type="text/javascript">
-		// 
-		console.log($('#audio'))
 		let musicFlag = false;
 		$('#music-btn').click(() => {
 			if (musicFlag) {
@@ -98,28 +94,28 @@
 		together.setSeconds(30);
 		together.setMilliseconds(0);
 
-		// if (!document.createElement('canvas').getContext) {
-		// 	var msg = document.createElement("div");
-		// 	msg.id = "errorMsg";
-		// 	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
-		// 	document.body.appendChild(msg);
-		// 	$("#code").css("display", "none")
-		// 	$("#copyright").css("position", "absolute");
-		// 	$("#copyright").css("bottom", "10px");
-		// 	document.execCommand("stop");
-		// } else {
-		// 	setTimeout(function () {
-		// 		startHeartAnimation();
-		// 	}, 5000);
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+			document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
 
-		// 	timeElapse(together);
-		// 	setInterval(function () {
-		// 		timeElapse(together);
-		// 	}, 500);
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
 
-		// 	adjustCodePosition();
-		// 	$("#code").typewriter();
-		// }
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
 	</script>
 	<script type="text/javascript">
 		function stopss() {
